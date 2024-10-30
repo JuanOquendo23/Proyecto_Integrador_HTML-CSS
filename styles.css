@@ -1,4 +1,10 @@
-
+img{
+    width: 150px;
+    position: absolute;
+    margin-right: 1300px;
+    margin-bottom: 600px;
+}
+ 
 body {
     margin: 0;
     padding: 0;
@@ -8,6 +14,10 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #015366;
+    
+    
+
+    
 }
 
 .main-container {
