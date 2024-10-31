@@ -116,7 +116,7 @@ body {
 
 .return {
     background-color: transparent;
-    color: var(--blue-1);
+    /* color: var(--blue-1); */
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 5%;
@@ -124,6 +124,11 @@ body {
     height: 6%;
     border-radius: 10px;
     border: 1px solid var(--blue-1);
+}
+
+.return a {
+    color: var(--blue-1);
+    text-decoration: none;
 }
 
 .return:hover {
