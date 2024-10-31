@@ -1,8 +1,7 @@
 img{
     width: 150px;
     position: absolute;
-    margin-right: 1300px;
-    margin-bottom: 600px;
+    top: 0;
 }
  
 body {
@@ -13,11 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #015366;
-    
-    
-
-    
+    background-color: #015366;    
 }
 
 .main-container {
@@ -34,7 +29,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-
 .login-container {
     background-color: #a7d1d2;
     padding: 30px;
@@ -43,8 +37,6 @@ h2 {
     width: 300px;
     margin: 0 auto; 
 }
-
-
 
 form input {
     width: 90%;
@@ -78,4 +70,3 @@ form button:hover {
 form input::placeholder {
     color: #63898c;
 }
-
