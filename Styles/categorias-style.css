@@ -1,0 +1,148 @@
+:root {
+    --blue-1: #033540;
+    --blue-2: #015366;
+    --blue-3: #63898C;
+    --blue-4: #A7D1D2;
+    --blue-5: #E0F4F5;
+  }
+
+  img{
+    width: 90px;
+    transition: transform 0.3s;
+    cursor: pointer;
+   
+    
+}
+    
+img:hover {
+    transform:scale(1.2);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--blue-2);
+    color: black;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--blue-5);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menu {
+     
+       margin-bottom:10px ;
+    
+}
+
+.menu h2 {
+    text-align: center;
+    color: #033540;
+    
+}
+
+.menu-button {
+    width: 100%;
+    padding: 15px; 
+    background-color: #015366;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display:flex; 
+    font-size: 16px; 
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    
+
+   
+}
+
+
+    
+
+
+.menu-button  {
+    margin-right: 10px; 
+    text-decoration: none !important;
+    
+    
+}
+
+.menu-button:hover {
+    background-color: #033540;
+    text-decoration: none;
+}
+
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.modal:target {
+    display: block; 
+}
+
+.modal-content {
+    background-color: var(--blue-5);
+    margin: 15% auto;
+    padding: 20px;
+    border: 3px solid var(--blue-1); 
+    width: 80%; 
+    max-width: 500px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: var(--blue-3);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(234, 9, 9);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #015366;
+    color: var(--blue-4);
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.modal-button:hover {
+    background-color: #033540;
+}
+
