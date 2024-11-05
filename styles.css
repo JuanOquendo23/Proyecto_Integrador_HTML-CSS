@@ -67,6 +67,11 @@ form button:hover {
     color: #033540;
 }
 
+form button a {
+    color: var(--blue-1);
+    text-decoration: none;
+}
+
 form input::placeholder {
     color: #63898c;
 }

@@ -170,7 +170,7 @@
   
   .return {
     background-color: transparent;
-    color: var(--blue-1);
+    /* color: var(--blue-1); */
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 5%;
