@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de sesión</title>
-    <link rel="stylesheet" href="Styles/styles.css">
+    <title>Inicio de sesion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <img src="images/2.png" alt="logo del proyecto">
-    <div class="main-container">
-        <div class="header">
-            <h1>Sistema de Inventario</h1>
+<body class="flex items-center justify-center min-h-screen bg-[#015366]">
+    <img src="Img/2.png" alt="logo del proyecto" class="absolute top-0 w-36">
+    <div class="text-center">
+        <div class="mb-6">
+            <h1 class="text-2xl font-bold text-[#E0f4f5]">Sistema de Inventario</h1>
         </div>
-        <div class="login-container">
-            <h2>Iniciar Sesión</h2>
-            <form action="categorias.html" method="get">
-                <input type="text" placeholder="Username" required>
-                <input type="password" placeholder="Password" required>
-               <button type="submit">Entrar</button>
-                
+        <div class="bg-[#a7d1d2] p-8 rounded-lg w-80 mx-auto">
+            <h2 class="text-xl font-semibold text-[#033540] mb-6">Iniciar Sesión</h2>
+            <form action="categorias.html" method="get" class="space-y-4">
+                <input type="text" placeholder="Username" required class="w-full px-4 py-2 bg-[#033540] text-[#E0f4f5] placeholder-[#63898c] border border-black rounded-md">
+                <input type="password" placeholder="Password" required class="w-full px-4 py-2 bg-[#033540] text-[#E0f4f5] placeholder-[#63898c] border border-black rounded-md">
+                <button type="submit" class="w-1/2 px-4 py-2 bg-[#033540] text-[#63898c] rounded-md transition-colors duration-300 hover:bg-[#63898c] hover:text-[#033540]">
+                    Entrar
+                </button>
             </form>
         </div>
     </div>

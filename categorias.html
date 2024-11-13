@@ -1,32 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Inventario | Categorias</title>
-    <link rel="stylesheet" href="Styles/categorias-style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="container">
-        <img src="images/4.png" alt="logo">
-        <div class="menu">
-            <h2>Gestion de categorias</h2>
-            <a href="panel.html"><button class="menu-button"> Amaderados</button></a>
-            <button class="menu-button"> Floral</button>
-            <button class="menu-button">Dulce</button>
-            <a href="#modal" class="menu-button">Opciones</a>
-            <a href="login.html"><button class="menu-button"> Cerrar sesion</button></a>
+
+<body class="bg-[#015366] text-black font-sans p-5 m-0">
+
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-[#E0F4F5] p-8 rounded-xl shadow-lg max-w-xl w-full overflow-hidden">
+            <img src="Img/4.png" alt="logo" class="w-24 transition-transform duration-300 cursor-pointer hover:scale-110">
+
+            <div class="mt-5 mb-3">
+                <h2 class="text-center text-[#033540] text-2xl font-bold">Gestion de categorias</h2>
+
+                <a href="panel.html">
+                    <button class="w-full py-3 bg-[#015366] text-white rounded-md mt-3 hover:bg-[#033540] focus:outline-none">
+                        Amaderados
+                    </button>
+                </a>
+                <button class="w-full py-3 bg-[#015366] text-white rounded-md mt-3 hover:bg-[#033540] focus:outline-none">
+                    Floral
+                </button>
+                <button class="w-full py-3 bg-[#015366] text-white rounded-md mt-3 hover:bg-[#033540] focus:outline-none">
+                    Dulce
+                </button>
+
+                <a href="#modal" class="w-full py-3 bg-[#015366] text-white rounded-md mt-3 hover:bg-[#033540] focus:outline-none text-center block">
+                    Opciones
+                </a>
+
+                <a href="login.html">
+                    <button class="w-full py-3 bg-[#015366] text-white rounded-md mt-3 hover:bg-[#033540] focus:outline-none">
+                        Cerrar sesión
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
 
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <a href="#" class="close">&times;</a>
-            <h3>Opciones de Categoría</h3>
-            <button class="modal-button">Agregar Categoría</button>
-            <button class="modal-button">Editar Categoría</button>
-            <button class="modal-button">Eliminar Categoría</button>
+    <div class=" hidden fixed inset-0 bg-black bg-opacity-50 z-10" id="modal">
+        <div class="modal-content bg-[#E0F4F5] p-6 border-4 border-[#033540] rounded-xl max-w-lg mx-auto mt-20 shadow-xl">
+            <a href="#" class="absolute top-2 right-2 text-[#63898C] text-3xl font-bold hover:text-red-500 close">&times;</a>
+            <h3 class="text-center text-[#033540] text-xl font-semibold mb-4">Opciones de Categoría</h3>
+
+            <button class="w-full py-3 bg-[#015366] text-white rounded-md mt-3 hover:bg-[#033540] focus:outline-none">
+                Agregar Categoría
+            </button>
+            <button class="w-full py-3 bg-[#015366] text-white rounded-md mt-3 hover:bg-[#033540] focus:outline-none">
+                Editar Categoría
+            </button>
+            <button class="w-full py-3 bg-[#015366] text-white rounded-md mt-3 hover:bg-[#033540] focus:outline-none">
+                Eliminar Categoría
+            </button>
         </div>
     </div>
+
+    <script>
+      
+        document.querySelector('a[href="#modal"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('modal').classList.remove('hidden');
+        });
+    
+       
+        document.querySelector('.close').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('modal').classList.add('hidden');
+        });
+    </script>
+    
+
 </body>
+
 </html>
