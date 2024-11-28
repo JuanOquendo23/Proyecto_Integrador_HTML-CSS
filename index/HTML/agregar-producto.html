@@ -4,44 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Añadir producto</title>
-    <link rel="stylesheet" href="CSS/agregar-producto-styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>AGREGAR PRODUCTO</h1>
-    <div class="container">
-        <div class="child">
-            <label>ID del producto</label>
-            <input type="text">
+<body class="bg-[#015366] flex flex-col justify-center items-center min-h-screen">
+    <h1 class="text-[#e0f4f5] text-4xl font-bold mb-4">AGREGAR PRODUCTO</h1>
+    <div class="bg-[#e0f4f5] w-11/12 sm:w-3/5 lg:w-2/5 p-6 rounded-lg grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- ID del producto -->
+        <div class="flex flex-col">
+            <label class="font-bold text-[#033540]">ID del producto</label>
+            <input type="text" class="bg-transparent border border-[#033540] rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#63898c]">
         </div>
-        <div class="child">
-            <label>Nombre del producto</label>
-            <input type="text">
+        <!-- Nombre del producto -->
+        <div class="flex flex-col">
+            <label class="font-bold text-[#033540]">Nombre del producto</label>
+            <input type="text" class="bg-transparent border border-[#033540] rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#63898c]">
         </div>
-        <div class="child">
-            <label>Precio</label>
-            <input type="text">
+        <!-- Precio -->
+        <div class="flex flex-col">
+            <label class="font-bold text-[#033540]">Precio</label>
+            <input type="text" class="bg-transparent border border-[#033540] rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#63898c]">
         </div>
-        <div class="child">
-            <label>Cantidad</label>
-            <input type="text">
+        <!-- Cantidad -->
+        <div class="flex flex-col">
+            <label class="font-bold text-[#033540]">Cantidad</label>
+            <input type="text" class="bg-transparent border border-[#033540] rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#63898c]">
         </div>
-        <div class="child">
-            <label>Género</label>
-            <input type="text">
+        <!-- Género -->
+        <div class="flex flex-col">
+            <label class="font-bold text-[#033540]">Género</label>
+            <input type="text" class="bg-transparent border border-[#033540] rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#63898c]">
         </div>
-        <div class="child">
-            <label>Fecha de ingreso</label>
-            <input type="date">
+        <!-- Fecha de ingreso -->
+        <div class="flex flex-col">
+            <label class="font-bold text-[#033540]">Fecha de ingreso</label>
+            <input type="date" class="bg-transparent border border-[#033540] rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#63898c]">
         </div>
-        <div class="text-area">
-            <label>Observaciones</label>
-            <textarea></textarea>
+        <!-- Observaciones -->
+        <div class="col-span-1 sm:col-span-2 flex flex-col">
+            <label class="font-bold text-[#033540]">Observaciones</label>
+            <textarea class="bg-transparent border border-[#033540] rounded-md p-2 h-20 focus:outline-none focus:ring-2 focus:ring-[#63898c]"></textarea>
         </div>
-        <div class="panelContainerButtons">
-            <button><a href="panel.html">Cancelar</a></button>
-        </div>
-        <div class="panelContainerButtons">
-            <button><a href="panel.html">Añadir</a></button>
+        <!-- Botones -->
+        <div class="col-span-1 sm:col-span-2 flex justify-between mt-4">
+            <button class="bg-[#015366] text-[#e0f4f5] px-6 py-2 rounded-md hover:bg-[#033540]">
+                <a href="panel.html">Cancelar</a>
+            </button>
+            <button class="bg-[#015366] text-[#e0f4f5] px-6 py-2 rounded-md hover:bg-[#033540]">
+                <a href="panel.html">Añadir</a>
+            </button>
         </div>
     </div>
 </body>
